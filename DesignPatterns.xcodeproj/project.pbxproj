@@ -14,6 +14,7 @@
 		724E71C029C1A7790039B712 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 724E71BF29C1A7790039B712 /* Assets.xcassets */; };
 		724E71C329C1A7790039B712 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 724E71C129C1A7790039B712 /* LaunchScreen.storyboard */; };
 		724E71CC29C1A7E30039B712 /* SimpleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724E71CB29C1A7E30039B712 /* SimpleFactory.swift */; };
+		724E71CE29C1C6220039B712 /* AbstractFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724E71CD29C1C6220039B712 /* AbstractFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		724E71C229C1A7790039B712 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		724E71C429C1A7790039B712 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		724E71CB29C1A7E30039B712 /* SimpleFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleFactory.swift; sourceTree = "<group>"; };
+		724E71CD29C1C6220039B712 /* AbstractFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				724E71CB29C1A7E30039B712 /* SimpleFactory.swift */,
+				724E71CD29C1C6220039B712 /* AbstractFactory.swift */,
 			);
 			path = Patterns;
 			sourceTree = "<group>";
@@ -151,6 +154,7 @@
 			files = (
 				724E71CC29C1A7E30039B712 /* SimpleFactory.swift in Sources */,
 				724E71BB29C1A7770039B712 /* ViewController.swift in Sources */,
+				724E71CE29C1C6220039B712 /* AbstractFactory.swift in Sources */,
 				724E71B729C1A7770039B712 /* AppDelegate.swift in Sources */,
 				724E71B929C1A7770039B712 /* SceneDelegate.swift in Sources */,
 			);

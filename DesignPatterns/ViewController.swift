@@ -11,10 +11,12 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        workWithSimpleFactory()
+
     }
 
 }
+
+//MARK: -SimpleFactory
 
 extension ViewController {
     func workWithSimpleFactory() {
@@ -27,6 +29,35 @@ extension ViewController {
         for transport in deliverTransports {
             transport.toDeliver()
         }
+    }
+}
+
+//MARK: -AbstractFactory
+
+extension ViewController {
+    func workWithAbstractFactory() {
+        
+        var raceOfHero: Race?
+        var heroFactory: HeroAbstractFactory?
+        var warrior: Warrior?
+        var wizard: Wizard?
+        
+        raceOfHero = .elf
+        
+        switch raceOfHero {
+        case .elf:
+            heroFactory = ElfHeroFactory.shared
+        case .human:
+            heroFactory = HumanHeroFactory.shared
+        default:
+            print("Error")
+        }
+        
+        warrior = heroFactory?.createWarrior()
+        wizard = heroFactory?.createWizard()
+        
+        warrior?.physicalAttack()
+        wizard?.magicAttack()
     }
 }
 
